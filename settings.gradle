@@ -1,1 +1,1 @@
-include ':yns_jnet_setting', ':lshui',':netsetting'
+include ':yns_jnet_setting',':netsetting'
