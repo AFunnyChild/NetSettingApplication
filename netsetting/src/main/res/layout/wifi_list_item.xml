@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+
+    android:orientation="vertical"
+ >
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_setting_item_height">
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/txt_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="wifi_name"
+       style="@style/setting_text" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_wifi_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_wifi_name"
+        android:text="wifi_desc" />
+    <ImageView
+        android:id="@+id/iv_wifi_connect_state"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@mipmap/icon_setting_connect_success"
+        />
+
+    <ImageView
+        android:layout_marginRight="3dp"
+        android:id="@+id/iv_lock"
+        android:layout_toLeftOf="@+id/img_wifi_level_ico"
+        android:layout_alignTop="@+id/img_wifi_level_ico"
+        android:src="@mipmap/icon_setting_wifi_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:id="@+id/img_wifi_level_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/wifi_1" />
+    <View
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_black"
+        />
+</RelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

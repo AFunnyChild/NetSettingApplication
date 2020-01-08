@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.linkfun.netsetting.ui.SettingItemView
+        app:SettingItemView_RightVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_setting_item_height">
+        <TextView
+            android:textSize="@dimen/activity_setting_text"
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:text="设备重启时间"
+           style="@style/setting_text"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <EditText
+            android:textSize="@dimen/activity_setting_text"
+            app:layout_marginRightPercent="6%"
+            android:id="@+id/et_reboot_time"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+
+            android:textColor="@color/color_white"
+            android:layout_weight="1"
+            android:text="01:00"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.linkfun.netsetting.ui.SettingItemView>
+    <com.linkfun.netsetting.ui.SettingItemView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/activity_setting_item_height">
+        <TextView
+
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            style="@style/setting_text"
+            android:text="启用密码"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+          <ch.ielse.view.SwitchView
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:id="@+id/switch_password"
+              app:isOpened="true"
+             android:layout_marginRight="20dp"
+              android:layout_width="80px"
+              android:layout_height="50px" />
+
+    </com.linkfun.netsetting.ui.SettingItemView>
+    <com.linkfun.netsetting.ui.SettingItemView
+        app:SettingItemView_RightVisible="true"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/color_666666"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_setting_item_height">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:text="管理员密码"
+            style="@style/setting_text"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_root_password"
+            android:gravity="center_vertical|right"
+            android:textSize="@dimen/activity_setting_text"
+            android:textColor="@color/color_white"
+            android:background="@null"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="123456"
+            app:layout_marginRightPercent="6%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.linkfun.netsetting.ui.SettingItemView>
+    <com.linkfun.netsetting.ui.SettingItemView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_setting_item_height">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:text="管理员手环"
+            style="@style/setting_text"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center_vertical|right"
+            android:paddingRight="20dp"
+            android:layout_weight="1"
+            style="@style/setting_text"
+            android:text="已录入"
+            app:layout_marginRightPercent="3.6%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.linkfun.netsetting.ui.SettingItemView>
+
+    <com.linkfun.netsetting.ui.SettingItemView
+        android:id="@+id/ll_reboot"
+        android:orientation="horizontal"
+     app:SettingItemView_RightVisible="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_setting_item_height">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:text="设备重启"
+            style="@style/setting_text"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.linkfun.netsetting.ui.SettingItemView>
+    <com.linkfun.netsetting.ui.SettingItemView
+        android:id="@+id/ll_clear"
+        android:orientation="horizontal"
+       app:SettingItemView_RightVisible="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_setting_item_height">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:text="重置设备"
+            style="@style/setting_text"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.linkfun.netsetting.ui.SettingItemView>
+
+    <com.linkfun.netsetting.ui.SettingItemView
+        android:id="@+id/ll_style"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_setting_item_height">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:text="主题风格"
+            style="@style/setting_text"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioGroup
+             android:id="@+id/rtn_group"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.linkfun.netsetting.ColorRadioButton
+                android:id="@+id/rtn_style1"
+                app:ColorRadioButton_Text="沉稳黄"
+                app:ColorRadioButton_CheckColor="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_width="150px"
+                android:textSize="@dimen/activity_setting_text"
+                app:ColorRadioButton_CheckBGColor="#FAC03D"
+                app:ColorRadioButton_NormalBGColor="@color/color_666666"
+                android:layout_height="match_parent"/>
+            <com.linkfun.netsetting.ColorRadioButton
+                android:id="@+id/rtn_style2"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:textSize="@dimen/activity_setting_text"
+                app:ColorRadioButton_Text="魅力紫"
+                android:gravity="center"
+                android:layout_width="150px"
+                app:ColorRadioButton_CheckColor="@color/white"
+
+               android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                app:ColorRadioButton_CheckBGColor="#452F5C"
+               app:ColorRadioButton_NormalBGColor="@color/color_666666"
+                android:layout_height="match_parent"/>
+
+        </RadioGroup>
+
+
+    </com.linkfun.netsetting.ui.SettingItemView>
+</LinearLayout>

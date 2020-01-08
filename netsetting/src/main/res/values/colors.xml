@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="divider">#D1D1D1</color>
+    <color name="click_bg_dark">#BFBFBF</color>
+    <color name="click_bg_dark_light">#E0E0E0</color>
+
+    <color name="popup_title_color">#ffc9cdd1</color>
+    <color name="advance_setting_item_bg">#fff8f8f8</color>
+    <color name="light_blue">#33b5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="textdec">#f18c14</color>
+
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_c61a04">#c61a04</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_d81e06">#d81e06</color>
+    <color name="color_b0b8b2">#b0b8b2</color>
+    <color name="color_28d19d">#28d19d</color>
+    <color name="color_000000">#000000</color>
+    <color name="mine_bg_one">#3c230d</color>
+    <color name="mine_bg_twe">#82a7d9</color>
+    <color name="mine_bg_three">#fcaeb8</color>
+    <color name="mine_bg_four">#fab178</color>
+    <color name="color_bg_fitness">#c13246</color>
+
+    <color name="main_button_bg_color">#CFA587</color>
+    <color name="main_button_text_color">#FFFFFF</color>
+    <color name="setting_bg_color">#fffafafa</color>
+    <color name="setting_date_color">#ff9b9b9b</color>
+
+    <!--有透明度亮橙-->
+    <color name="colorHighRed">#C51338</color>
+    <color name="colorLowRed">#EC2651</color>
+    <color name="windowBackground">#F6F6F6</color>
+    <color name="colorBlue">#368bdc</color>
+
+    <color name="main_color_yellow">#CFA587</color>
+    <color name="main_color_bg">#1A1A1A</color>
+    <color name="main_color_bg_twe">#333333</color>
+    <color name="main_bg_color_gray">#FAFAFA</color>
+    <color name="main_text_color_black">#323232</color>
+    <color name="main_text_color_gray">#9B9B9B</color>
+    <color name="setting_text_color">#000000</color>
+    <color name="color_buy_card_top">#1F1F1F</color>
+    <color name="main_select_text_color">#EEEEEE</color>
+    <color name="main_un_select_text_color">#666666</color>
+    <color name="main_bg_show_spare_color">#FFFAFAFA</color>
+    <color name="titleTextColor">#323232</color>
+</resources>

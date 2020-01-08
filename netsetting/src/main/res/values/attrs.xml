@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PasswordCircleLayout">
+        <attr name="RoundRadius" format="dimension"/>
+        <attr name="LayoutColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="SettingItemView">
+        <attr name="SettingItemView_RightVisible" format="boolean"/>
+
+    </declare-styleable>
+    <declare-styleable name="PieChart">
+        <attr name="PieChart_InnerPercent" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ColorRadioButton">
+        <attr name="ColorRadioButton_CheckBackground" format="reference"/>
+        <attr name="ColorRadioButton_Text" format="string"/>
+        <attr name="ColorRadioButton_CheckColor" format="color"/>
+        <attr name="ColorRadioButton_NormalColor" format="color"/>
+        <attr name="ColorRadioButton_CheckBGColor" format="color"/>
+        <attr name="ColorRadioButton_NormalBGColor" format="color"/>
+        <attr name="ColorRadioButton_OnlyCheckShow" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="RoundTextView">
+        <attr name="RoundTextView_RoundWidth" format="dimension"/>
+        <attr name="RoundTextView_RoundRadius" format="dimension"/>
+        <attr name="RoundTextView_FillColor" format="color"/>
+        <attr name="RoundTextView_BorderColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="RelativeStyleLayout">
+        <attr name="RelativeStyleLayout_Style_One" format="reference"/>
+        <attr name="RelativeStyleLayout_Style_Twe" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="LinearStyleLayout">
+        <attr name="LinearStyleLayout_Style_One" format="reference"/>
+        <attr name="LinearStyleLayout_Style_Twe" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="TextStyleView">
+        <attr name="TextStyleView_Style_One" format="color"/>
+        <attr name="TextStyleView_Style_Twe" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="RoundBGStyleLayout">
+        <attr name="RoundBGStyleLayout_Style_One" format="color"/>
+        <attr name="RoundBGStyleLayout_Style_Twe" format="color"/>
+        <attr name="RoundBGStyleLayout_Radius" format="color"/>
+        <attr name="RoundBGStyleLayout_Direction" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="730px"
+    android:layout_height="742px"
+    android:layout_gravity="center"
+    android:background="@mipmap/bg_setting_wifi_dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Large Text"
+        android:textSize="@dimen/activity_setting_menu_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="47px"
+            android:paddingRight="47px"
+            android:paddingBottom="60px"
+            android:paddingTop="103px">
+
+            <RelativeLayout
+        android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="#D5D5D5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+                <TextView
+            android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/activity_setting_text"
+                    android:id="@+id/txt_label_conn_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/conn_status"
+                    android:textColor="@color/color_666666" />
+
+                <TextView
+            android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/txt_conn_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/conn_status"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/activity_setting_text"
+                    android:textStyle="bold" />
+            
+            </RelativeLayout>
+
+
+            <RelativeLayout
+             android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="#D5D5D5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/activity_setting_text"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/txt_label_signal_strength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/signal_strength"
+                    android:textColor="@color/color_666666" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/txt_signal_strength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signal_strength"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/activity_setting_text"
+                    android:textStyle="bold" />
+            
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+             android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="#D5D5D5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/activity_setting_text"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/txt_label_security_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/security_level"
+                    android:textColor="@color/color_666666" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/txt_security_level"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:text="@string/security_level"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/activity_setting_text"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+         android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="#D5D5D5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/activity_setting_text"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/txt_label_ip_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ip_address"
+                    android:textColor="@color/color_666666" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/txt_ip_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ip_address"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/activity_setting_text"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+           
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_marginRight="15px"
+            android:background="@drawable/btn_setting_cancel"
+            android:id="@+id/txt_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textSize="@dimen/activity_setting_text"
+            android:text="@string/cancel"
+            android:textColor="@color/color_666666" />
+
+        
+
+        <TextView
+            android:layout_marginLeft="15px"
+            android:background="@drawable/btn_setting_confrim"
+            android:id="@+id/txt_btn_disconnect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textSize="@dimen/activity_setting_text"
+            android:text="@string/disconnect"
+            android:textColor="@color/white"  />
+    </LinearLayout>
+
+</LinearLayout>

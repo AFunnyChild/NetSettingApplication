@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/bg_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_state"
+        app:layout_marginTopPercent="5.3%"
+        app:layout_marginBottomPercent="2%"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            app:layout_marginLeftPercent="2.5%"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/icon_setting_connected"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:41AM"
+            android:textColor="#ffffffff"
+            android:textSize="13sp"
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_below="@+id/rl_state"
+       android:id="@+id/rl_head"
+        app:layout_marginLeftPercent="2.5%"
+        app:layout_marginRightPercent="2.5%"
+        android:background="@drawable/bg_setting_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="12%"
+        >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            app:layout_marginLeftPercent="4.3%"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/icon_setting_back"
+            android:layout_height="wrap_content" />
+        <TextView
+           android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        app:layout_marginLeftPercent="2.5%"
+        app:layout_marginRightPercent="2.5%"
+        app:layout_marginBottomPercent="8%"
+        android:layout_below="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#575757">
+
+        <com.linkfun.netsetting.NoScrollViewPager
+         android:layout_toRightOf="@+id/ll_bottom"
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.linkfun.netsetting.NoScrollViewPager>
+        <com.zhy.android.percent.support.PercentLinearLayout
+
+            android:layout_width="100dp"
+            app:layout_widthPercent="33.3%"
+            android:id="@+id/ll_bottom"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/bg_setting_left">
+
+            <RadioGroup
+                android:id="@+id/rtn_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.linkfun.netsetting.ColorRadioButton
+                    app:ColorRadioButton_CheckBackground="@mipmap/icon_setting_connect"
+                    android:id="@+id/rtn_internet"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:gravity="center"
+                    app:ColorRadioButton_Text="网络设置"
+                   android:textSize="@dimen/activity_setting_menu_text"
+                    app:ColorRadioButton_NormalColor="@color/color_666666"
+                    app:ColorRadioButton_CheckColor="@color/color_white"
+                    />
+
+                <com.linkfun.netsetting.ColorRadioButton
+                    app:ColorRadioButton_CheckBackground="@mipmap/icon_setting_server_param"
+                    android:id="@+id/rtn_server_param"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:textSize="@dimen/activity_setting_menu_text"
+                    android:gravity="center"
+                    app:ColorRadioButton_Text="服务器参数"
+
+                    app:ColorRadioButton_NormalColor="@color/color_666666"
+                    app:ColorRadioButton_CheckColor="@color/color_white"
+                    />
+
+                <com.linkfun.netsetting.ColorRadioButton
+                    app:ColorRadioButton_CheckBackground="@mipmap/icon_setting_device_param"
+                    android:id="@+id/rtn_device_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:gravity="center"
+                    app:ColorRadioButton_Text="设备设置"
+                    android:textSize="@dimen/activity_setting_menu_text"
+                    app:ColorRadioButton_NormalColor="@color/color_666666"
+                    app:ColorRadioButton_CheckColor="@color/color_white"
+                    />
+                <com.linkfun.netsetting.ColorRadioButton
+                    app:ColorRadioButton_CheckBackground="@mipmap/icon_setting_server_param"
+                    android:id="@+id/rtn_device_param"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:gravity="center"
+                    android:textSize="@dimen/activity_setting_menu_text"
+                    app:ColorRadioButton_Text="设备参数"
+                    app:ColorRadioButton_NormalColor="@color/color_666666"
+                    app:ColorRadioButton_CheckColor="@color/color_white"
+                    />
+
+            </RadioGroup>
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

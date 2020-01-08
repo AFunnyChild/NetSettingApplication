@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/dropdownLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_keyboard_click"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_arrow_dropdown" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_keyboard_vertical"
+        android:orientation="vertical"
+        android:showDividers="end|beginning|middle"
+        android:stretchColumns="0,1,2">
+
+        <TableRow
+            android:divider="@drawable/divider_keyboard_horizontal"
+            android:orientation="horizontal"
+            android:showDividers="end|beginning|middle">
+
+            <Button
+                android:id="@+id/button01"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_keyboard_click"
+                android:text="1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button02"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_keyboard_click"
+                android:text="2"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_keyboard_click"
+                android:text="3"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:divider="@drawable/divider_keyboard_horizontal"
+            android:orientation="horizontal"
+            android:showDividers="end|beginning|middle">
+
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_keyboard_click"
+                android:text="4"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button05"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_keyboard_click"
+                android:text="5"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button06"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_keyboard_click"
+                android:text="6"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:divider="@drawable/divider_keyboard_horizontal"
+            android:orientation="horizontal"
+            android:showDividers="end|beginning|middle">
+
+            <Button
+                android:id="@+id/button07"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_keyboard_click"
+                android:text="7"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button08"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_keyboard_click"
+                android:text="8"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button09"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_keyboard_click"
+                android:text="9"
+                android:textSize="24sp" />
+        </TableRow>
+
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_keyboard_horizontal"
+        android:orientation="horizontal"
+        android:showDividers="end|beginning">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/buttonDot"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/selector_keyboard_click_dark"
+            android:text="."
+            android:textSize="24sp" />
+
+        <Button
+          android:layout_weight="1"
+            android:id="@+id/button00"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/selector_keyboard_click"
+            android:text="0"
+            android:textSize="24sp" />
+
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/buttonCross"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/selector_keyboard_click_dark"
+            android:text="×"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>
