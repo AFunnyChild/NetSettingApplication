@@ -35,7 +35,6 @@ public class BaseConfirmNoTitleDialog extends Dialog implements View.OnClickList
         super(context, R.style.CommonBottomDialogStyle);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         conentView = inflater.inflate(R.layout.dialog_base_confirm_no_title, null);
-
         this.setContentView(conentView);
         setCancelable(false);//点击外部不可dismiss
         setCanceledOnTouchOutside(false);
@@ -43,7 +42,6 @@ public class BaseConfirmNoTitleDialog extends Dialog implements View.OnClickList
         window.setGravity(Gravity.CENTER);
         ok = (TextView)conentView.findViewById(R.id.btn_ok);
         cancel = (TextView)conentView.findViewById(R.id.btn_cancel);
-
         tvContent = (TextView)conentView.findViewById(R.id.tv_content);
         tvContentTwe = (TextView)conentView.findViewById(R.id.tv_content_twe);
         rlHeadLayout = (PercentRelativeLayout)conentView.findViewById(R.id.rl_head);
@@ -52,7 +50,6 @@ public class BaseConfirmNoTitleDialog extends Dialog implements View.OnClickList
         cancel.setOnClickListener(this);
         if (contenyText.contains("#")){
             String[] splitText = contenyText.split("#");
-
             tvContent.setText(splitText[0]);
             tvContentTwe.setText(splitText[1]);
             tvContentTwe.setVisibility(View.VISIBLE);
@@ -60,7 +57,6 @@ public class BaseConfirmNoTitleDialog extends Dialog implements View.OnClickList
             tvContentTwe.setVisibility(View.GONE);
             tvContent.setText(contenyText);
         }
-
         this.onConfirmClick = onConfirmClick;
         this.show();
 
@@ -87,11 +83,7 @@ public class BaseConfirmNoTitleDialog extends Dialog implements View.OnClickList
         }
         return instance;
     }
-
-
-
     public OnConfirmClick onConfirmClick;
-
     public void setOnConfirmClick(OnConfirmClick onConfirmClick) {
         this.onConfirmClick = onConfirmClick;
     }
@@ -103,16 +95,12 @@ public class BaseConfirmNoTitleDialog extends Dialog implements View.OnClickList
         if (id==ok.getId()){
             if (onConfirmClick !=null){
                 onConfirmClick.confirm();
-
             }
-
             dismiss();
-
         }
         if(id==cancel.getId()){
             if (onConfirmClick !=null){
                 onConfirmClick.cancel();
-
             }
             dismiss();
         }
@@ -125,10 +113,8 @@ public class BaseConfirmNoTitleDialog extends Dialog implements View.OnClickList
         void confirm();
         void cancel();
     }
-
     @Override
     public void dismiss() {
         super.dismiss();
-
     }
 }
